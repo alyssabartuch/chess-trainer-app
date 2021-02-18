@@ -87,8 +87,10 @@ function App() {
         }}
         onSolve={() => {
           setHint("solved");
-          setTactics((it) => it.slice(1));
-          loadTactic();
+          setTimeout(() => {
+            setTactics((it) => it.slice(1));
+            loadTactic();
+          }, 3000);
         }}
       />
     </div>
