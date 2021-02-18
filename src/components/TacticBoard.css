@@ -1,0 +1,25 @@
+.hint-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.hint-btn {
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+  margin-bottom: 0;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hint-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
