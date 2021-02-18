@@ -50,6 +50,7 @@ const TacticBoard: React.FC<Props> = ({
 
         if (autoNext) {
           setHint(autoNext.solution);
+          setIsHintVisible(false);
           setFen(autoNext.fen);
           setSolution(autoNext.solution);
         }
@@ -84,7 +85,7 @@ const TacticBoard: React.FC<Props> = ({
       />
       <div className="hint-container">
         <div className="hint-btn" onClick={() => toggleHintVisibility()}>
-          Hint Move
+          Need a Hint?
         </div>
         {isHintVisible && (
           <div className="hint-content">
